@@ -1,7 +1,7 @@
 # CodingNomads-python-101-capstone
 
 ### About This Repository
-I independently completed CodingNomads’ [Python 101 - Introduction to Python](https://codingnomads.com/course/python-programming-101) certification to invest in my Python skills. This course is the first of ten in the [CodingNomads Python Web Development Career Track](https://codingnomads.com/career-track/python-web-development-learn-python-bootcamp). This repository contains my capstone project: a **Command-Line Interface (CLI) role-playing game** called *Dungeons and Dragons*. This project has two versions: Version 1.0, developed during the first course as part of this career track, and Version 2.0, an update with more complex concepts as part of its second course.
+I independently completed CodingNomads’ [Python 101 - Introduction to Python](https://codingnomads.com/course/python-programming-101) certification to invest in my Python skills. This course is the first of ten in the [CodingNomads Python Web Development Career Track](https://codingnomads.com/career-track/python-web-development-learn-python-bootcamp). This repository contains my capstone project: a Command-Line Interface (CLI) role-playing game called Dungeons and Dragons. This project has two versions: Version 1.0, developed during the first course as part of this career track, and Version 2.0, an update with more complex concepts as part of its second course.
 
 ---
 
@@ -41,5 +41,6 @@ I independently completed CodingNomads’ [Python 101 - Introduction to Python](
 ### To Clone This Repository
 ```bash
 git clone https://github.com/franpanteli/CodingNomads-python-101-capstone.git
+
 
 
