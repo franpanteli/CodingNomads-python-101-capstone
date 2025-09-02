@@ -127,32 +127,48 @@ def explore_room(room):
     if room == "empty": #case #1, the room is empty
         print("This room is empty.") #print out that the room is empty
 
-    elif room == "sword":
-        print("You found a sword!")
-        choice = input("Pick it up? (yes/no): ").lower()
-        if choice in valid_yes_no and choice == "yes":
+    elif room == "sword": #case #2, the user finds a sword
+        print("You found a sword!") #print the result
+        choice = input("Pick it up? (yes/no): ").lower() #give the user a choice of picking up the item
+        if choice in valid_yes_no and choice == "yes": #if the user entered yes or no and they want to pick up the sword,
+                                                        #add it to the list which contains the inventory of the items they picked up
             inventory.append("sword")
             print("Sword added to your inventory.")
 
-    elif room == "shield":
+    elif room == "shield": #case #3, the user finds a shield
         print("You found a shield!")
-        choice = input("Pick it up? (yes/no): ").lower()
+        choice = input("Pick it up? (yes/no): ").lower() #we perform the same operation as in the previous code block, but with
+                                                        #the shield and not the sword
         if choice in valid_yes_no and choice == "yes":
             inventory.append("shield")
             print("Shield added to your inventory.")
 
-    elif room == "dragon":
+    elif room == "dragon": #case #4, the user finds a dragon
         # Fighting a dragon requires having a sword
-        fight("dragon", required_item="sword")
+        fight("dragon", required_item="sword") #call the fight function we previously defined to fight the dragon
+                                                #they then either loose or do not
+                                                #if they loose, then their inventory is wiped
 
     elif room == "goblin":
         # Goblin fight is easier; no required item
-        fight("goblin")
+        fight("goblin") #the previous code block is repeated, but for the goblin and not the dragon
+
+    """Changes
+        -> whereas the previous version of the game had two doors (left and right), this version of the game has doors which go
+            left, right, back and front
+        -> this version of the game uses an inventory in the form of a list, to store the weapons that the user has
+            -> it also offers the ability to wipe the inventory if the user looses a fight, by defining a function for this
+        -> the previous version of the game only had a sword and a dragon
+        -> this version of the game adds a goblin, which is defeated with a shied and a random dice score above3 (up to 6)
+        -> the dragon was defeated in the previous version of the game if the user had the sword. In this version of the game, the
+            user must have the sword, and also a random dice score above 3 (up to 6)
+    """
 
 # GAME FLOW
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+#we now have functions defined, which we can leverage when the user plays the game
 # Main game loop that continues until the player chooses to quit
 while True:
     # Ask the player to pick a door
