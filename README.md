@@ -41,7 +41,3 @@ I independently completed CodingNomads’ [Python 101 - Introduction to Python](
 ### To Clone This Repository
 ```bash
 git clone https://github.com/franpanteli/CodingNomads-python-101-capstone.git
-
-
-
-
