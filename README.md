@@ -16,7 +16,7 @@ I independently completed CodingNomads’ [Python 101 - Introduction to Python](
 - The game is won or lost, which depends on whether the sword has been acquired
 - `if` statements and boolean tracking are implemented in terms of game logic
 
-#### Version 2.0 (Extension)
+#### Version 2.0
 [Version 2.0](https://github.com/franpanteli/CodingNomads-python-101-capstone/blob/main/dungeons_and_dragon_game_2.0.py) is an extension of this project, completed as part of the [CodingNomads 2 Python 201 - Procedural Python course](https://codingnomads.com/course/python-programming-201).   
 - The user can choose between four rooms, instead of two: left, right, forward, and back
 - An inventory system is used, in which players can pick up items (a sword and or shield)
@@ -41,4 +41,5 @@ I independently completed CodingNomads’ [Python 101 - Introduction to Python](
 ### To Clone This Repository
 ```bash
 git clone https://github.com/franpanteli/CodingNomads-python-101-capstone.git
+
 
