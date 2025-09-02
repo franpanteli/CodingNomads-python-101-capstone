@@ -1,16 +1,47 @@
 # CodingNomads-python-101-capstone
+
 ### About This Repository
-I independently completed CodingNomad’s [Python 101 - Introduction to Python](https://codingnomads.com/course/python-programming-101) certification to invest in my Python skills. This course is the first of ten in the [CodingNomads Python Web Development Career Track](https://codingnomads.com/career-track/python-web-development-learn-python-bootcamp). This repository contains my independent problem-solving work, as part of the course capstone project. I devised a script for this ([dungeons_and_dragon_game.py](https://github.com/franpanteli/CodingNomads-python-101-capstone/blob/main/dungeons_and_dragon_game.py)). This created a command-line game, where the user would interact with the game world via CLI inputs. The script would first prompt the player for their name and store it for use throughout the game via f strings. The script would next display a welcoming message to the user. They would then be prompted to choose between two doors (left or right). When entering the left room, the player would encounter it empty. When moving into the right room, they would discover a sword that could be picked up. This was implemented by using the `input()` method, and the status of the sword pick up was tracked by using a boolean value. The user would next be provided the option of changing rooms, in which case they may have encountered a dragon and won or lost the game depending on whether the sword had been picked up. This code was written into the project [dungeons_and_dragon_game.py](https://github.com/franpanteli/CodingNomads-python-101-capstone/blob/main/dungeons_and_dragon_game.py) file, which was submitted to mark the successful completion of the certification capstone project. This enabled me to invest in my game design, if block writing skills and input management skills with Python, further investing in my independent learning.
+I independently completed CodingNomads’ [Python 101 - Introduction to Python](https://codingnomads.com/course/python-programming-101) certification to invest in my Python skills. This course is the first of ten in the [CodingNomads Python Web Development Career Track](https://codingnomads.com/career-track/python-web-development-learn-python-bootcamp).
 
-### To Clone This Repository
-```
+This repository contains my capstone project: a **Command-Line Interface (CLI) role-playing game** called *Dungeons and Dragons*. The project demonstrates my understanding of Python basics, control flow, functions, input handling, and game logic.
+
+---
+
+### Game Overview
+
+#### Version 1.0
+- Prompts the player for their name and greets them
+- Offers a choice between two doors (left or right)
+- Left door: empty room
+- Right door: sword that can be picked up
+- Encounter a dragon depending on player choices
+- Win or lose depends on whether the sword is acquired
+- Implements `if` statements and boolean tracking for simple game logic
+
+#### Version 2.0 (Extension)
+[Version 2.0](https://github.com/franpanteli/CodingNomads-python-101-capstone/blob/main/dungeons_and_dragon_game_2.0.py) is an extension of this project, completed as part of the [CodingNomads 2 Python 201 - Procedural Python course](https://codingnomads.com/course/python-programming-201).  
+- Introduces multiple rooms: left, right, forward, and back
+- Implements an **inventory system**: players can pick up items (sword, shield)
+- Adds multiple enemies: dragons and goblins
+- Battles use a **randomised dice roll** to determine victory
+- Losing a fight results in **inventory loss**
+- Randomised room outcomes make gameplay more dynamic and replayable
+- Functions abstract repeated logic (e.g., `fight()`, `explore_room()`)
+
+---
+
+### Skills Demonstrated
+- Python fundamentals: variables, data types, input/output
+- Conditional logic: `if`, `elif`, `else`
+- Loops: `while` for game flow
+- Functions and parameters for modular code
+- Lists and inventory management
+- Randomisation using the `random` module
+- CLI-based game design
+
+---
+
+### How to Run the Game
+1. Clone this repository:
+```bash
 git clone https://github.com/franpanteli/CodingNomads-python-101-capstone.git
-```
-
-
-
-
-
-
-
-
