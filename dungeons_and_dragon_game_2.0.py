@@ -101,14 +101,31 @@ def lose_inventory():
 
 
 def explore_room(room):
+    """To explore a room
+        -> this function is for exploring a room
+        -> the previous game only had two rooms
+        -> when the user first starts the game, they are offered an option of doors - left / right / forwards / backwards
+
+        -> different outcomes depending on the type of room the player is in:
+            -> they can find nothing
+            -> they can find a sword or shield (an item)
+                -> the only item they could find in the previous version of the game was a sword
+                -> the shield is a new item that can be picked up here
+
+            -> they can encounter an enemy
+                -> the previous enemies which they could encounter were only a dragon
+                -> in this version of the game, they can encounter a golblin
+                -> this has to be fought with the shield, and the dragon still with the sword
+                -> the goblin is fought with the shield and the dragon with the sword
+
+            -> each of these different case scenarios are coded into this function with if blocks
+
+            -> either, the user encounters an enemy (a dragon or golblin), they can pick up a weapon (sword / shield), or they find
+                an empty room
     """
-    Handles exploring a room. Depending on the room type, the player may:
-    - Find nothing
-    - Find an item they can pick up (sword/shield)
-    - Encounter an enemy (dragon/goblin)
-    """
-    if room == "empty":
-        print("This room is empty.")
+
+    if room == "empty": #case #1, the room is empty
+        print("This room is empty.") #print out that the room is empty
 
     elif room == "sword":
         print("You found a sword!")
