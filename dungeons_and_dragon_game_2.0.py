@@ -13,9 +13,13 @@
         game. This pseudo-random element can have an effect on whether your player wins or loses when battling an opponent.
     """
 
+#import modules
 import random
 
-# --- Game Setup ---
+# GAME SETUP
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 # Define the valid options for door choices so we can validate player input
 valid_door_choices = {"left", "right", "forward", "back"}
     #compared to the previous version of the game, we are adding doors which do back and forward
@@ -31,7 +35,10 @@ inventory = [] #we want to store the user's inventory, this is initially empty
 name = input("Type your name: ") #ask the user for their name
 print("Welcome,", name + ", to the game world!")
 
-# --- Functions ---
+# DEFINING FUNCTIONS
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 def fight(opponent, required_item=None): #define functions to fight the dragon
                                         #this is the same dragon as in the previous version of the game
 
@@ -72,10 +79,21 @@ def fight(opponent, required_item=None): #define functions to fight the dragon
         lose_inventory()
         return False
 
+    """Loosing or winning the game randomly
+        -> they win the game if the dice roll is above 3 (maximum 6) and they have the weapon to beat their opponent
+        -> they lost the game above if they did not have the weapon to beat the opponent
+        -> they also loose the game if they have the weapon to beat the opponent, but theyroll the dice below 3 (up to 6)
+        -> the fight function returns True or False, depending on if the use lost or won the game
+            -> this also depends on the type of opponent which they are facing
+            -> the previous version of the game only had dragons
+    """
 
 def lose_inventory():
     """
-    Clears the player’s inventory when they lose a fight.
+        -> if the player looses a fight, then their entire inventory is wiped
+        -> this prints out the message that their inventory is now empty
+        -> to reset the inventory, a blank list is defined
+        -> this function is made global, so that changes to variables which it makes then apply everywhere in the code
     """
     global inventory
     print("You lost all your items!")
@@ -114,7 +132,10 @@ def explore_room(room):
         # Goblin fight is easier; no required item
         fight("goblin")
 
-# --- Game Flow ---
+# GAME FLOW
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 # Main game loop that continues until the player chooses to quit
 while True:
     # Ask the player to pick a door
