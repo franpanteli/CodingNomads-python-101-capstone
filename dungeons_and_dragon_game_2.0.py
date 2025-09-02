@@ -169,32 +169,40 @@ def explore_room(room):
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 #we now have functions defined, which we can leverage when the user plays the game
-# Main game loop that continues until the player chooses to quit
-while True:
-    # Ask the player to pick a door
-    door_choice = input("Pick a door (left/right/forward/back): ").lower()
+#main game loop that continues until the player chooses to quit
+while True: #use an infinite loop
+    #ask the player to pick a door
+    door_choice = input("Pick a door (left/right/forward/back): ").lower() #as the user for their choice of door
 
-    # Validate player input
+    #validate player input
     if door_choice not in valid_door_choices:
+            #from before, valid_door_choices = {"left", "right", "forward", "back"}
+            #they must enter a valid door choice, if this is not the case continue moves the user back to the input stage
+            #of the while loop
         print("That’s not a valid choice!")
         continue
 
-    # Handle the different doors
-    if door_choice == "left":
-        explore_room("sword")
+    #handle the different doors
+    if door_choice == "left": #there are four door choices, left right, forward and backward
+                                #the explore_room function is called for each of them
+                                #the argument of this function is the room
+                                #depending on the status of the room, different functions are called
+        explore_room("sword") #the user picks up the sword and it's added to their inventory
     elif door_choice == "right":
-        explore_room("dragon")
+        explore_room("dragon") #the user fights the dragon
+                                #this uses the embedded fight function
     elif door_choice == "forward":
-        explore_room("shield")
+        explore_room("shield") #we repeat the process with the other two doors
     elif door_choice == "back":
         explore_room("goblin")
 
-    # Show inventory after each action
-    print(f"Your current inventory: {inventory}")
+    #show inventory after each action
+    print(f"Your current inventory: {inventory}") #this uses an f string literal to print the inventory status
 
-    # Ask if the player wants to continue
+    #we are iterating through this in an infinite while loop
+    #ask if the player wants to continue
     cont = input("Do you want to keep exploring? (yes/no): ").lower()
-    if cont in valid_yes_no and cont == "no":
+    if cont in valid_yes_no and cont == "no": #break the while loop if the user wants to exit the game
         print("Thanks for playing!")
         break
 
