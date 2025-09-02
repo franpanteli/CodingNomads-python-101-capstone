@@ -1,4 +1,5 @@
-"""Pseudocode
+"""
+    Required task / game updates, compared to the first version
     Save the user input options you allow, e.g., in a set that you can check against
         when your user makes a choice.
     Create an inventory for your player, where they can add and remove items.
@@ -33,21 +34,36 @@ print("Welcome,", name + ", to the game world!")
 # --- Functions ---
 def fight(opponent, required_item=None): #define functions to fight the dragon
                                         #this is the same dragon as in the previous version of the game
+
     """
-    Handles fighting logic against an opponent.
-    If a required item is specified (like a sword for a dragon), the player must have it.
-    Uses a dice roll mechanic (1-6) to add randomness to the fight outcome.
+        -> this function fights the opponent (the dragon)
+        -> the sword fights the dragon
+        -> the second argument to this function is the status of whether the user has the weapon to fight their opponent type
+        -> this is randomised using a dice roll from 1-6
     """
+
     print(f"You encounter a {opponent}!")
 
     # Check if the player is missing the required item
-    if required_item and required_item not in inventory:
+    if required_item and required_item not in inventory: #the player needs the required item to fight their opponent,
+                                                        #to be able to defeat them
         print(f"You don’t have the {required_item}! The {opponent} defeats you.")
+
+    """Weapons
+        -> if the user has the weapons to defeat their opponent, then they stand a chance at defeating them
+        -> if they don't have the weapon, then they will always loose the fight against their opponent
+            -> this is what this section of the code does
+        -> the next section of the code implies that they have the weapon
+            -> in which case we want to add a random element into the game
+            -> there exists a case where they have the weapon to defeat the opponent, but they still loose the game
+                because of its random element
+    """
+
         lose_inventory()
         return False
 
     # Roll a dice (1-6) to see if the player wins or loses
-    roll = random.randint(1, 6)
+    roll = random.randint(1, 6) #define a random integer between 1 and 6 - this is the dice roll
     if roll >= 3:
         print(f"You rolled a {roll} and defeated the {opponent}!")
         return True
