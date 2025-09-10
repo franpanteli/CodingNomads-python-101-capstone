@@ -1,6 +1,5 @@
 # Build a CLI RPG game following the instructions from the course.
 
-
 # Ask the player for their name.
 can_fight_dragon =False
 pick_up_sword=""

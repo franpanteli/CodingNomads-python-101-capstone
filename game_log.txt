@@ -1,0 +1,17 @@
+Player Fran has entered the game.
+Found a sword.
+Picked up a sword.
+Current inventory: ['sword']
+Encountered a goblin.
+Encountered a goblin.
+Rolled 6 and defeated the goblin.
+Current inventory: ['sword']
+Encountered a dragon.
+Encountered a dragon.
+Rolled 5 and defeated the dragon.
+Current inventory: ['sword']
+Encountered a goblin.
+Encountered a goblin.
+Rolled 3 and defeated the goblin.
+Current inventory: ['sword']
+Player Fran exited the game.

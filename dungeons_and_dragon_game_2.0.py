@@ -205,10 +205,3 @@ while True: #use an infinite loop
     if cont in valid_yes_no and cont == "no": #break the while loop if the user wants to exit the game
         print("Thanks for playing!")
         break
-
-
-
-
-
-
-
