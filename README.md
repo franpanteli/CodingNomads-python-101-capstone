@@ -26,7 +26,7 @@ I independently completed CodingNomads’ [Python 101 - Introduction to Python](
 - Functions are used for repeated logic (for example, the `fight()` and `explore_room()` functions)
 
 #### Version 3.0
-[Version 3.0](https://github.com/franpanteli/CodingNomads-python-101-capstone/blob/main/dungeons_and_dragon_game_3.0.py) is the same as the second version of the game. However, it leverages a new function called log_status(), which appends the moves that the user makes throughout the game to a new txt file called [game_log.txt](https://github.com/franpanteli/CodingNomads-python-101-capstone/blob/main/game_log.txt). This is done by leveraging the Python open() function in append mode.
+[Version 3.0](https://github.com/franpanteli/CodingNomads-python-101-capstone/blob/main/dungeons_and_dragon_game_3.0.py) is the same as the second version of the game. However, it leverages a new function called log_status(), which appends the moves that the user makes throughout the game to a new txt file called [game_log.txt](https://github.com/franpanteli/CodingNomads-python-101-capstone/blob/main/game_log.txt). This is done by leveraging the Python open() function in append mode, to append the user's moves to an output txt file.
 
 ---
 
@@ -51,5 +51,6 @@ I independently completed CodingNomads’ [Python 101 - Introduction to Python](
 ### To Clone This Repository
 ```bash
 git clone https://github.com/franpanteli/CodingNomads-python-101-capstone.git
+
 
 
