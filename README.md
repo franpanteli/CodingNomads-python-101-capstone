@@ -62,4 +62,3 @@ git clone https://github.com/franpanteli/CodingNomads-python-101-capstone.git
 
 
 
-
