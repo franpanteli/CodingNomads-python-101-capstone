@@ -49,13 +49,15 @@ Please note that this project version was built while completing the [second cou
 - Return values in functions
 - Docstrings
 - API integration
-- Code refactoring
+- Refactoring code
+- Exception handling 
 
 ---
 
 ### To Clone This Repository
 ```bash
 git clone https://github.com/franpanteli/CodingNomads-python-101-capstone.git
+
 
 
 
