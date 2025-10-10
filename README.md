@@ -28,8 +28,8 @@ I independently completed CodingNomads’ [Python 101 - Introduction to Python](
 #### Version 3.0
 [Version 3.0](https://github.com/franpanteli/CodingNomads-python-101-capstone/blob/main/dungeons_and_dragon_game_3.0.py) is the same as the second version of the game. However, it leverages a new function called log_status(), which appends the moves that the user makes throughout the game to a new txt file called [game_log.txt](https://github.com/franpanteli/CodingNomads-python-101-capstone/blob/main/game_log.txt). This is done by leveraging the Python open() function in append mode, to append the user's moves to an output txt file.
 
-#### Version 4.0
-[This iteration of the project](https://github.com/franpanteli/CodingNomads-python-101-capstone/blob/main/dungeons_and_dragon_game_4.0.py) integrates two APIs. When the user is asked for their name, they are also asked if they have a stable internet connection. If this is the case, an `http` GET request is made to the Uzby API. This generates a random username (stage name) for the user, whose length matches the one they entered. The `fight()` function was secondly refactored, to integrate the DOG CEO API. These APIs were selected due to their accessible documentation, lack of key requirements, and their potential for numerous uses. The second API this project version incorporates provides the user with a prize if they win the game. This is in the form of a randomly generated dog image URL. This was also incorporated on the condition that the user has a stable internet connection.
+#### Version 4.0 - API Integration
+Please note that this project version was built while completing the [second course](https://codingnomads.com/course/python-programming-201) in the CodingNomads Python Web Development Career Track. [This iteration of the project](https://github.com/franpanteli/CodingNomads-python-101-capstone/blob/main/dungeons_and_dragon_game_4.0.py) integrates two APIs. When the user is asked for their name, they are also asked if they have a stable internet connection. If this is the case, an `http` GET request is made to the Uzby API. This generates a random username (stage name) for the user, whose length matches the one they entered. The `fight()` function was secondly refactored, to integrate the DOG CEO API. These APIs were selected due to their accessible documentation, lack of key requirements, and their potential for numerous uses. The second API this project version incorporates provides the user with a prize if they win the game. This is in the form of a randomly generated dog image URL. This was also incorporated on the condition that the user has a stable internet connection. 
 
 ---
 
@@ -54,6 +54,7 @@ I independently completed CodingNomads’ [Python 101 - Introduction to Python](
 ### To Clone This Repository
 ```bash
 git clone https://github.com/franpanteli/CodingNomads-python-101-capstone.git
+
 
 
 
