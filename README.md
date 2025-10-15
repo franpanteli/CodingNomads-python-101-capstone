@@ -57,8 +57,3 @@ Please note that this project version was built while completing the [second cou
 ### To Clone This Repository
 ```bash
 git clone https://github.com/franpanteli/CodingNomads-python-101-capstone.git
-
-
-
-
-
